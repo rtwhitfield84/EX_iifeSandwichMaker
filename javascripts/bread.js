@@ -1,4 +1,5 @@
-var SandwichMaker = (function(maker) {
+"use strict";
+
 	
 	var BreadPrices = {
 		"Wheat": 1.10,
@@ -7,8 +8,8 @@ var SandwichMaker = (function(maker) {
 		"French": 1.40,
 		"Wrap": 1.50
 	};
- maker.addBread = function (bread) {
+  function addBread (bread) {
     return BreadPrices[bread];
-  };
-return maker;
-})(SandwichMaker);
+  }
+
+module.exports = addBread;

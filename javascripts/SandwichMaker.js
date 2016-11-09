@@ -1,17 +1,13 @@
-var SandwichMaker = (function() {
+"use strict";
+
+
   var totalPrice = 0;
-  return {
-    addTopping: function(toppingPrice) {
+
+    function addTopping (toppingPrice) {
       return totalPrice += toppingPrice;
     }
-  };
-})();
 
-
-
-
-
-
+module.exports = addTopping;
 
 
 

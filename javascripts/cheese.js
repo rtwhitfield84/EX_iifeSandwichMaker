@@ -1,12 +1,13 @@
-var SandwichMaker = (function(maker) {
+"use strict";
+
 	var CheesePrices = {
 		"Provolone": 1.00,
 		"Pepperjack": 1.00,
 		"Cheddar": 1.00,
 		"Swiss": 1.00
 	};
-maker.addCheese = function(cheese) {
+ function addCheese(cheese) {
 	return CheesePrices[cheese];
-};
-return maker;
-})(SandwichMaker);
+}
+
+module.exports = addCheese;
